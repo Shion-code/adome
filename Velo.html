@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Velo</title>
+	<link rel="icon" href="media/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+	<nav class="navbar bg-dark p-0 sticky-top" data-bs-theme="dark">
+		<div class="container-fluid p-0 ps-3 pe-3 row around">
+			<div class="p-0 navProta">
+			<a class="navbar-brand p-0" href="Index.html"><img src="media/Logo.PNG" alt=""></a>
+			</div>
+			<div class="p-0 navProta">
+			<a role="button" class="tituloProta p-0" href="#historiaSectionVelo">Velo</a>
+			</div>
+		</div>
+	</nav>
+	<div class="contenido container-fluid p-0 row justify-content-center m-0 100vw">
+		<div id="historiaSectionVelo" class="text-align-center justify-content-center p-0 mb-5 row">
+			<h1 class="titulo p-5 col-xxl-8 col-lg-8 col-sm-12 100vw">Historia</h1>
+			<div class="col-8 p-0 row align-items-center">
+				<div class="p-0 imgConHistoria">
+					<div class="p-0 imgHistoria">
+						<button id="botonHistoriaVelo" onclick="clickVelo(historiaImgVeloNueva, historiaImgVeloVieja)" onmouseover="mouseVelo(historiaImgVeloNueva, historiaImgVeloVieja)" onmouseout="mouseVelo(historiaImgVeloNueva, historiaImgVeloVieja)">
+							<img id="historiaImgVeloNueva" src="media/Velo_v2.png" alt="">
+							<img id="historiaImgVeloVieja" src="media/Velo.png" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="p-0 textoHistoria">
+					<p class="texto p-2">Durante su infancia, Chat, un mecánico, adoptó a Velo y a Alistair, quien la acompañaría en todo lo que hacía. A lo largo de los años, ha salvado la vida de mucha gente con sus implantes "alegales" en el Taller del Chatarra, ganando una gran popularidad en el barrio como la mejor mecánica de toda Valencia. Es así como conoció a Lucio y Kor, quiénes fueron sus clientes más cercanos. También conoció en algún momento con Débora, con quién se hizo amiga al instante y le permitió utilizar el quirófano del Taller. También conoció a DJ Kitsune de quien se volvió una fanática. </p>
+				</div>
+			</div>
+		</div>
+		<div id="aparienciaSectionAnatema" class="text-align-center justify-content-center p-0 mb-5 row">
+			<h1 class="titulo p-5 col-xxl-8 col-lg-8 col-sm-12 100vw">Apariencia</h1>
+			<div class="col-8 p-0 row align-items-center">
+				<div class="p-0 imgConAparienciaSm">
+					<div class="p-0 imgAparienciaSm">
+						<button id="botonAparienciaSmVelo" onclick="clickVelo(aparienciaImgSmAnatemaNueva, aparienciaImgSmAnatemaVieja)">
+							<img id="aparienciaImgSmAnatemaNueva" src="media/Velo_v2 cuerpo.jpg" alt="">
+							<img id="aparienciaImgSmAnatemaVieja" src="media/Velo cuerpo.png" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="p-0 textoApariencia">
+					<p class="texto p-2">Velo es una mujer chiquilla, con largas rastas turquesas luminosas de una fina tecnología que llegan hasta la cadera con el lado derecho del cabello totalmente rapado con una forma de rayo y varias líneas que van hasta la frente con solo un mechón de pelo sin rasta debajo del lado rapado. Velo tiene algunos tatuajes y <em>piercings</em>. Lleva ropa cómoda: un top con rejilla, unos pantalones grandes con estampado militar y unas botas con cordones de diferentes colores. </p>
+				</div>
+				<div class="p-0 imgConAparienciaLg">
+					<div class="p-0 imgAparienciaLg">
+						<button id="botonAparienciaLgVelo" onclick="clickVelo(aparienciaImgLgVeloNueva, aparienciaImgLgVeloVieja)" onmouseover="mouseVelo(aparienciaImgLgVeloNueva, aparienciaImgLgVeloVieja)" onmouseout="mouseVelo(aparienciaImgLgVeloNueva, aparienciaImgLgVeloVieja)">
+							<img id="aparienciaImgLgVeloNueva" src="media/Velo_v2 cuerpo.jpg" alt="">
+							<img id="aparienciaImgLgVeloVieja" src="media/Velo cuerpo.png" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="personalidadSectionVelo" class="text-align-center justify-content-center p-0 mb-5 row">
+			<h1 class="titulo p-5 col-xxl-8 col-lg-8 col-sm-12 100vw">Personalidad</h1>
+			<div class="col-8 p-0">
+				<p class="texto p-2">Velo tiene mucha energía, es directa, inteligente y amable, aunque cuando tocan el tema de su pasado, se niega a recordar. Pese a que puede parecer una loca incapaz de usar el cerebro para algo más que la fiesta, Velo es experta en cerrar los hocicos de aquellos que se creen más inteligentes que ella. Velo tiene una maestría con la observación, siendo capaz de reconocer cualquier objeto o persona que haya visto previamente en cuestión de segundos.</p>
+			</div>
+		</div>
+		<div id="relacionesVeloSection" class="text-align-center justify-content-center col-8 p-0 mb-5 row">
+			<h1 class="titulo p-5 col-12 100vw">Relaciones</h1>
+			<div class="colRelaciones p-2">
+				<a id="botonRelacionVeloAnatema" class="relacionImg" onclick="clickRelaciones(botonRelacionVeloAnatema, lazoVeloAnatema, imgAnatemaVelo)" onmouseover="mouseOverRelaciones(botonRelacionVeloAnatema, lazoVeloAnatema, imgAnatemaVelo)" onmouseout="mouseOutRelaciones(lazoVeloAnatema)">
+					<img src="media/Anatema_v2.jpg" alt="Anatema" id="imgAnatemaVelo">
+					<p class="relacionNum p-0">?</p>
+					<p id="lazoVeloAnatema" class="relacionLazo" style="display: none;">Los lazos con Anatema</p>
+				</a>
+			</div>
+			<div class="colRelaciones p-2">
+				<a id="botonRelacionVeloDebora" class="relacionImg" onclick="clickRelaciones(botonRelacionVeloDebora, lazoVeloDebora, imgDeboraVelo)" onmouseover="mouseOverRelaciones(botonRelacionVeloDebora, lazoVeloDebora, imgDeboraVelo)" onmouseout="mouseOutRelaciones(lazoVeloDebora)">
+					<img src="media/Debora.png" alt="Debora" id="imgDeboraVelo">
+					<p class="relacionNum p-0">2</p>
+					<p id="lazoVeloDebora" class="relacionLazo" style="display: none;">Los lazos con Debora</p>
+				</a>
+			</div>
+			<div class="colRelaciones p-2">
+				<a id="botonRelacionVeloJuniper" class="relacionImg" onclick="clickRelaciones(botonRelacionVeloJuniper, lazoVeloJuniper, imgJuniperVelo)" onmouseover="mouseOverRelaciones(botonRelacionVeloJuniper, lazoVeloJuniper, imgJuniperVelo)" onmouseout="mouseOutRelaciones(lazoVeloJuniper)">
+					<img src="media/Juniper.png" alt="Juniper" id="imgJuniperVelo">
+					<p class="relacionNum p-0">?</p>
+					<p id="lazoVeloJuniper" class="relacionLazo" style="display: none;">Los lazos con Juniper</p>
+				</a>
+			</div>
+			<div class="colRelaciones p-2">
+				<a id="botonRelacionVeloLyra" class="relacionImg" onclick="clickRelaciones(botonRelacionVeloLyra, lazoVeloLyra, imgLyraRebekah)" onmouseover="mouseOverRelaciones(botonRelacionVeloLyra, lazoVeloLyra, imgLyraRebekah)" onmouseout="mouseOutRelaciones(lazoVeloLyra)">
+					<img src="media/Lyra.png" alt="Lyra" id="imgLyraRebekah">
+					<p class="relacionNum p-0">2</p>
+					<p id="lazoVeloLyra" class="relacionLazo" style="display: none;">Los lazos con Lyra</p>
+				</a>
+			</div>
+			<div class="colRelaciones p-2">
+				<a id="botonRelacionVeloRebekah" class="relacionImg" onclick="clickRelaciones(botonRelacionVeloRebekah, lazoVeloRebekah, imgRebekahVelo)" onmouseover="mouseOverRelaciones(botonRelacionVeloRebekah, lazoVeloRebekah, imgRebekahVelo)" onmouseout="mouseOutRelaciones(lazoVeloRebekah)">
+					<img src="media/Rebekah.png" alt="Rebekah" id="imgRebekahVelo">
+					<p class="relacionNum p-0">2</p>
+					<p id="lazoVeloRebekah" class="relacionLazo" style="display: none;">Los lazos con Rebekah</p>
+				</a>
+			</div>
+		</div>
+		<div id="habilidadesArcanasVeloSection" class="text-align-center justify-content-center col-8 p-0 mb-5 row">
+			<h1 class="titulo p-5 col-12 100vw">Habilidades Arcanas</h1>
+			<div class="colHabilidadesArcanas p-0">
+				<h1 class="subtitulo habilidadesArcanascSubtitulo p-3 col-12 100vw">Lux Inflexio</h1>
+				<p class="texto p-2">- Crear, formar y manipular la luz.</p>
+				<p class="texto p-2">- Ver toda la gama electromagnética.</p>
+				<p class="texto p-2">- Emanar luz blanca. </p>
+			</div>
+			<div class="colHabilidadesArcanas p-0">
+				<h1 class="subtitulo habilidadesArcanascSubtitulo p-3 col-12 100vw">Distorsión: 4</h1>
+				<p class="texto p-2">Una luz cegadora hace presencia detrás de Velo, como si se hubiese encendido un foco, y comienza a glitchear al tiempo que un humo negro comienza a salir de sus ojos.</p>
+			</div>
+		</div>
+		<div id="footerSectionVelo" class="justify-content-center p-5 row">
+			<div class="justify-content-center text-align-start p-0 m-0 col-6 row">
+				<p class="texto p-3 footerTitulo">Twitch de la máster y las jugadoras</p>
+				<div class="footerCol justify-content-start text-align-start p-0 m-0">
+					<a href="https://www.twitch.tv/reahofi" class="footerTexto p-2">Reah (máster)</a>
+					<a href="https://www.twitch.tv/lilicross" class="footerTexto p-2">LiliCross (Anatema)</a>
+					<a href="https://www.twitch.tv/christerva" class="footerTexto p-2">Christerva (Débora)</a>
+					<a href="https://www.twitch.tv/terduki" class="footerTexto p-2">Terduki (Juniper)</a>
+				</div>
+				<div class="footerCol justify-content-start text-align-start p-0 m-0">
+					<a href="https://m.twitch.tv/kalimochito" class="footerTexto p-2">Kali (Lyra)</a>
+					<a href="https://www.twitch.tv/meieff" class="footerTexto p-2">Meieff (Rebekah)</a>
+					<a href="https://m.twitch.tv/2deazucar" class="footerTexto p-2">Nakkuchan (Velo)</a>
+				</div>
+			</div>
+			<div class="justify-content-center text-align-start col-6 row">
+				<p class="texto p-3 footerTitulo">Twitter de la máster, las jugadoras y la ilustradora</p>
+				<div class="footerCol justify-content-start text-align-start p-0 m-0">
+					<a href="https://twitter.com/reah_ofi?lang=es" class="footerTexto p-2">Reah (máster)</a>
+					<a href="https://twitter.com/LiliCross_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footerTexto p-2">LiliCross (Anatema)</a>
+					<a href="https://twitter.com/Christerva?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footerTexto p-2">Christerva (Débora)</a>
+					<a href="https://twitter.com/terduki?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footerTexto p-2">Terduki (Juniper)</a>
+				</div>
+				<div class="footerCol justify-content-start text-align-start p-0 m-0">
+					<a href="https://twitter.com/kalimox0?lang=es" class="footerTexto p-2">Kali (Lyra)</a>
+					<a href="https://twitter.com/meieff?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footerTexto p-2">Meieff (Rebekah)</a>
+					<a href="https://twitter.com/Nakkuchan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footerTexto p-2">Nakkuchan (Velo)</a>
+					<a href="https://twitter.com/ArtSoritha?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footerTexto p-2">ArtSoritha (ilustradora)</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="decoraciones container-fluid justify-content-between row p-0 m-0 position-fixed top-0">
+		<div class="col-2 p-0 d-block">
+			<div class="tentaculosIzquierdaArriba p-0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 154.773 355.462"><path id="Trazado_1" data-name="Trazado 1" d="M3325,833.126s.163-84.414,75.4-119.28,0-126.62,0-126.62,122.95,91.754,49.547,152.312S3339.517,847.807,3325,923.045,3325,833.126,3325,833.126Z" transform="translate(-3318.548 -587.225)" fill="#5fae33"/></svg>
+			</div>
+			<div class="tentaculosIzquierdaAbajo p-0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 154.773 355.462"><path id="Trazado_2" data-name="Trazado 2" d="M3325,696.787s.163,84.414,75.4,119.28,0,126.62,0,126.62,122.95-91.754,49.547-152.312S3339.517,682.106,3325,606.868,3325,696.787,3325,696.787Z" transform="translate(-3318.548 -587.225)" fill="#5fae33"/></svg>
+			</div>
+		</div>
+		<div class="col-2 p-0 d-block">
+			<div class="tentaculosDerechaArriba p-0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 154.772 355.462"><path id="Trazado_3" data-name="Trazado 3" d="M3466.868,833.126s-.163-84.414-75.4-119.28,0-126.62,0-126.62-122.95,91.754-49.547,152.312,110.431,108.27,124.948,183.508S3466.868,833.126,3466.868,833.126Z" transform="translate(-3318.548 -587.225)" fill="#5fae33"/></svg>
+			</div>
+			<div class="tentaculosDerechaAbajo p-0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 154.772 355.462"><path id="Trazado_4" data-name="Trazado 4" d="M3466.868,696.787s-.163,84.414-75.4,119.28,0,126.62,0,126.62-122.95-91.754-49.547-152.312,110.431-108.27,124.948-183.508S3466.868,696.787,3466.868,696.787Z" transform="translate(-3318.548 -587.225)" fill="#5fae33"/></svg>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		// mediaquery js
+		var medidaCont;
+		function myFunction(medida) {
+			if (medida.matches) {
+				medidaCont = "pequeno";
+			} else {
+				medidaCont = "grande";
+			}
+		};
+		var medida = window.matchMedia("(max-width: 768px)");
+		myFunction(medida);
+		medida.addEventListener("change", function() {
+		myFunction(medida);
+		});
+		// si clicas en la foto de Velo
+		function clickVelo(nueva, vieja) {
+			if (medidaCont == "pequeno") {
+				if (vieja.style.display === "block") {
+					vieja.style.display = "none";
+					nueva.style.display = "block";
+				} else {
+					vieja.style.display = "block";
+					nueva.style.display = "none";
+				}
+			}
+		};
+		// si pasas por encima en la foto de Velo
+		function mouseVelo(nueva, vieja) {
+			if (medidaCont == "grande") {
+				if (vieja.style.display === "block") {
+					vieja.style.display = "none";
+					nueva.style.display = "block";
+				} else {
+					vieja.style.display = "block";
+					nueva.style.display = "none";
+				}
+			}
+		};
+		// si clicas en los links de relaciones
+		function clickRelaciones(link, texto, nombre) {
+			var ref = nombre.alt + ".html";
+			if (medidaCont == "pequeno") {
+				if (texto.style.display === "none") {
+					texto.style.display = "block";
+				} else {
+					link.href = ref;
+				}
+			} else {
+				link.href = ref;
+			}
+		};
+		//si pasas por encima en los links de relaciones
+		function mouseOverRelaciones(link, texto, nombre) {
+			var ref = nombre.alt + ".html";
+			if (medidaCont == "grande") {
+				if (texto.style.display === "none") {
+					texto.style.display = "block";
+				} else {
+					link.href = ref;
+				}
+			}
+		};
+		function mouseOutRelaciones(texto) {
+			if (medidaCont == "grande") {
+				if (texto.style.display === "block") {
+					texto.style.display = "none";
+				}
+			}
+		};
+	</script>
+</body>
+</html>
