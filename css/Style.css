@@ -1,0 +1,597 @@
+/*fuentes*/
+	@font-face {
+		font-family: Berkshire Swash;
+		src: url("../media/fonts/BerkshireSwash-Regular.ttf")
+	}
+	@font-face {
+		font-family: Redressed;
+		src: url("../media/fonts/Redressed-Regular.ttf")
+	}
+	@font-face {
+		font-family: Dreaming Outloud;
+		src: url("../media/fonts/dreaming-outloud-regular.otf")
+	}
+/*animaciones*/
+	@keyframes menu{
+		from {top: -200px}
+		to {top:  0px}
+	}
+	@keyframes tentaculosIzquierda{
+		from {left: -500px}
+		to {left:  0px}
+	}
+	@keyframes tentaculosDerecha{
+		from {right: -500px}
+		to {right:  0px}
+	}
+body {
+	background-color: #7C2B7C;
+	position: relative;
+}
+/*menu*/
+	.navbar {
+		width: 100%;
+		position: fixed;
+		z-index: 3;
+		background-color: black!important;
+		animation-name: menu;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+	.navbar-brand>img {
+		padding: 0px;
+		height: 120px;
+		width: auto;
+	}
+	.nav-item {
+		display: block;
+		padding: 0px 20px;
+	}
+	.nav-link {
+		text-align: center;
+		width: 100%;
+		padding: 0px;
+		display: block;
+		color: white!important;
+		font-size: clamp(1.75rem, 3vw, 2.25rem);
+		font-family: Berkshire Swash;
+		border-radius: 0px;
+		transition: border-radius 0.4s;
+	}
+	.nav-link:hover {
+		background-color: #5fae33;
+		border-radius: 25px;
+	}
+/*texto*/
+	.titulo {
+		font-family: Berkshire Swash;
+		font-size: clamp(1.75rem, 5vw, 3.5rem);
+		color: white;
+		text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+		text-align: center;
+		text-decoration: none;
+		background-color: transparent;
+		border: none;
+	}
+	.subtitulo {
+		font-family: Redressed;
+		font-size: clamp(1.5rem, 3vw, 2.25rem);
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: transparent;
+		border: none;
+	}
+	.texto {
+		font-family: Dreaming Outloud;
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: transparent;
+		border: none;
+	}
+/*modal*/
+	.modalFondo {
+		background-color: #5fae33;
+	}
+	label {
+		display: block;
+		font-family: Dreaming Outloud;
+		font-size: clamp(1rem, 2vw, 2rem);
+		color: white;
+	}
+	input {
+		border: none;
+		display: block;
+		width: 100%;
+		font-family: Dreaming Outloud;
+		font-size: clamp(1rem, 2vw, 2rem);
+		color: white;
+		background-color: #7C2B7C;
+	}
+	.botonModal {
+		display: block;
+		border-radius: 0px;
+		background-color: transparent;
+	}
+	.botonEnviaModal {
+		background-color: #7C2B7C;
+		border-radius: 25px;
+	}
+	.botonEnviaModal:hover {
+		background-color: black;
+	}
+.contenido {
+	position: absolute;
+	z-index: 2;
+	top: 120px;
+}
+video {
+	width: 100%;
+	height: auto;
+}
+/*personajes*/
+	.colPersonajes {
+		position: relative;
+		display: block;
+		width: calc(33.33% - 20px);
+		background-color: transparent;
+		border-radius: 0px;
+		margin: 10px;
+	}
+	.colPersonajes>img {
+		width: 100%;
+		height: auto;
+	}
+	.personajesTexto {
+		height: 0;
+		padding: 22px;
+		border-radius: 0px 0px 75px 75px;
+		width: 100%;
+		display: block;
+		position: absolute;
+		bottom: -30px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: transparent;
+		color: transparent;
+		overflow: hidden;
+	}
+	.colPersonajes:hover {
+		transition-property: background-color, border-radius;
+		transition-duration: 0.5s, 0.2s;
+		background-color: #5fae33;
+		border-radius: 20%;
+	}
+	.colPersonajes:hover .personajesTexto {
+		transition-property: height, bottom, background-color, color;
+		transition-duration: 0.5s, 0.3s, 0.2s, 0.2s;
+		height: auto;
+		bottom: -17px;
+		background-color: rgba(0, 0, 0, 0.65);
+		color: white;
+	}
+/*capítulo*/
+	.capituloConImagen {
+		width: 41.66666667%;
+		height: 100%;
+		align-items: center;
+	}
+	.capituloConImagenSm{
+		display: none;
+	}
+	.capituloConImagenXl {
+		width: 41.66666667%;
+		height: 100%;
+		align-items: center;
+	}
+	.capituloColImagen {
+		background-color: transparent;
+		border: none;
+	}
+	.capituloColImagen>img {
+		width: 100%;
+		height: auto;
+	}
+	.capituloColTexto {
+		width: 55%;
+		background-color: #5fae33;
+	}
+	.capituloColTexto>p {
+		text-align: left;
+	}
+	.capituloLink {
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+/*footer*/
+	#footerSection {
+		background-color: #5fae33;
+	}
+	.footerCol {
+		width: 50%;
+	}
+	.footerTitulo {
+		font-weight: bold;
+		font-size: clamp(1.5rem, 3vw, 2.25rem);
+	}
+	.footerTexto {
+		font-family: Dreaming Outloud;
+		font-size: clamp(1rem, 1vw, 1.5rem);
+		color: white;
+		display: block;
+		text-align: start;
+		text-decoration: none;
+		background-color: transparent;
+		border: none;
+	}
+
+/*Anatema personaje*/
+	/*menu*/
+		.navProta {
+			width: auto;
+		}
+		.tituloProta {
+			width: auto;
+			color: white!important;
+			font-size: clamp(1.75rem, 3vw, 2.25rem);
+			font-family: Berkshire Swash;
+			text-decoration: none;
+		}
+	/*Historia*/
+		.imgConHistoria {
+			width: 33.33%;
+			height: auto;
+		}
+		.imgHistoria {
+			width: auto;
+			height: auto;
+			background-color: #5fae33;
+			border-radius: 20%;
+		}
+		#botonHistoriaAnatema {
+			width: auto;
+			height: auto;
+			background-color: transparent;
+			border: none;
+		}
+		#botonHistoriaAnatema>img {
+			width: 100%;
+			height: auto;
+		}
+		#historiaImgAnatemaVieja {
+			display: none;
+		}
+		.textoHistoria {
+			width: 66.66%;
+		}
+	/*Apariencia*/
+		.imgConAparienciaSm {
+			display: none;
+		}
+		.imgAparienciaSm {
+			width: auto;
+			height: auto;
+			background-color: #5fae33;
+			border-radius: 20%;
+		}
+		#botonAparienciaSmAnatema {
+			width: auto;
+			height: auto;
+			background-color: transparent;
+			border: none;
+		}
+		#botonAparienciaSmAnatema>img {
+			width: 100%;
+			height: auto;
+		}
+		#aparienciaImgSmAnatemaVieja {
+			display: none;
+		}
+		.textoApariencia {
+			width: 66.66%;
+		}
+		.imgConAparienciaLg {
+			width: 33.33%;
+		}
+		.imgAparienciaLg {
+			width: auto;
+			height: auto;
+			background-color: #5fae33;
+			border-radius: 20%;
+		}
+		#botonAparienciaLgAnatema {
+			width: auto;
+			height: auto;
+			background-color: transparent;
+			border: none;
+		}
+		#botonAparienciaLgAnatema>img {
+			width: 100%;
+			height: auto;
+		}
+		#aparienciaImgLgAnatemaVieja {
+			display: none;
+		}
+	/*Relaciones*/
+		.colRelaciones {
+			position: relative;
+			width: calc(33.33% - 20px);
+			background-color: #5fae33;
+			border-radius: 20%;
+			margin: 10px;
+		}
+		.colRelaciones>button {
+			display: block;
+			width: auto;
+			height: auto;
+			border: none;
+			background-color: transparent;
+		}
+		.relacionImg {
+			display: block;
+			background-color: transparent;
+			border: none;
+		}
+		.relacionImg>img {
+			width: 100%;
+			height: auto;
+		}
+		.relacionNum {
+			display: block;
+			width: clamp(2rem, 4vw, 3rem);
+			height: clamp(2rem, 4vw, 3rem);
+			position: absolute;
+			top: 7%;
+			right: 7%;
+			background-color: #7C2B7C;
+			font-family: Redressed;
+			font-size: clamp(1.5rem, 3vw, 2.25rem);
+			color: white;
+			text-align: center;
+			border: none;
+			border-radius: 50%;
+		}
+		.relacionLazo {
+			width: 90%;
+			height: auto;
+			position: absolute;
+			overflow: hidden;
+			top: 20%;
+			right: 7%;
+			background-color: black;
+			font-family: Redressed;
+			font-size: clamp(1.5rem, 3vw, 2.25rem);
+			text-decoration: none;
+			color: white;
+			text-align: center;
+			border: none;
+			border-radius: 20px;
+		}
+	/*habilidades arcanas*/
+		.colHabilidadesArcanas {
+			width: 50%;
+		}
+		.habilidadesArcanascSubtitulo {
+			text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+
+		}
+	#footerSectionAnatema {
+		background-color: #5fae33;
+	}
+/*Otros personajes*/
+	.imgHistoria>img {
+		width: 100%;
+		height: auto;
+	}
+	.imgAparienciaSm>img {
+		width: 100%;
+		height: auto;
+	}
+	.imgAparienciaLg>img {
+		width: 100%;
+		height: auto;
+	}
+	#footerSectionDebora {
+		background-color: #5fae33;
+	}
+	#footerSectionJuniper {
+		background-color: #5fae33;
+	}
+	#footerSectionLyra {
+		background-color: #5fae33;
+	}
+	#footerSectionRebekah {
+		background-color: #5fae33;
+	}
+/*Velo*/
+	#botonHistoriaVelo {
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		border: none;
+	}
+	#botonHistoriaVelo>img {
+		width: 100%;
+		height: auto;
+	}
+	#historiaImgVeloVieja {
+		display: none;
+	}
+	/*Apariencia*/
+	#botonAparienciaSmVelo {
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		border: none;
+	}
+	#botonAparienciaSmVelo>img {
+		width: 100%;
+		height: auto;
+	}
+	#aparienciaImgSmVeloVieja {
+		display: none;
+	}
+	#botonAparienciaLgVelo {
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		border: none;
+	}
+	#botonAparienciaLgVelo>img {
+		width: 100%;
+		height: auto;
+	}
+	#aparienciaImgLgVeloVieja {
+		display: none;
+	}
+	#footerSectionVelo {
+		background-color: #5fae33;
+	}
+@media only screen and (max-width: 768px) {
+	/*personajes*/
+		.colPersonajes {
+			background-color: #5fae33;
+			border-radius: 20%;
+		}
+		.personajesTexto {
+			border-radius: 0px 0px 33px 33px;
+			height: auto;
+			bottom: -17px;
+			padding: 2px;
+			background-color: rgba(0, 0, 0, 0.65);
+			color: white;
+			overflow: visible;
+		}
+	/*capitulo*/
+		.capituloConImagen {
+			width: 100%;
+			height: auto;
+		}
+		.capituloConImagenSm {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.capituloConImagenXl {
+			display: none;
+		}
+		.capituloColTexto {
+			width: 100%;
+			margin: 0px!important;
+			padding: 0px!important;
+		}
+}
+@media only screen and (max-width: 576px) {
+	/*personajes*/
+		#personajesSection {
+			width: 100%;
+			justify-content: center;
+		}
+		.colPersonajes {
+			width: calc(50% - 10px);
+			margin: 5px;
+		}
+		.personajesTexto {
+			border-radius: 0px 0px 40px 40px;
+			padding: 15px;
+		}
+	/*footer*/
+		.footerCol {
+			width: 100%;
+		}
+	/*Anatema*/
+		/*Historia*/
+			.imgConHistoria {
+				width: 100%;
+			}
+			.textoHistoria {
+				width: 100%;
+			}
+		/*Apariencia*/
+			.imgConAparienciaSm {
+				display: block;
+				width: 100%;
+			}
+			.imgConAparienciaLg {
+				display: none;
+			}
+			.textoApariencia {
+				width: 100%;
+			}
+		/*Relaciones*/
+			#relacionesAnatemaSection {
+				width: 100%;
+			}
+			.colRelaciones {
+				width: calc(50% - 10px);
+				margin: 5px;
+			}
+		/*Habilidades Arcanas*/
+			.colHabilidadesArcanas {
+				width: 100%;
+			}
+	#relacionesDeboraSection {
+		width: 100%;
+	}
+	#relacionesJuniperSection {
+		width: 100%;
+	}
+	#relacionesLyraSection {
+		width: 100%;
+	}
+	#relacionesRebekahSection {
+		width: 100%;
+	}
+	#relacionesVeloSection {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.personajesTexto {
+		border-radius: 0px 0px 30px 30px;
+	}
+}
+/*decoraciones*/
+	.tentaculosIzquierdaArriba {
+		height: 45vh;
+		width: 16.666%;
+		position: absolute;
+		top: 10vh;
+		animation-name: tentaculosIzquierda;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		z-index: -1;
+	}
+	.tentaculosIzquierdaAbajo {
+		height: 45vh;
+		width: 16.666%;
+		position: absolute;
+		top: 50vh;
+		animation-name: tentaculosIzquierda;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		z-index: -1;
+	}
+	.tentaculosDerechaArriba {
+		height: 45vh;
+		width: 16.666%;
+		position: absolute;
+		top: 10vh;
+		animation-name: tentaculosDerecha;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		z-index: -1;
+	}
+	.tentaculosDerechaAbajo {
+		height: 45vh;
+		width: 16.666%;
+		position: absolute;
+		top: 50vh;
+		animation-name: tentaculosDerecha;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		z-index: -1;
+	}
